@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="viewType_options">
+        <item>@string/titleToprated</item>
+        <item>@string/titlePopular</item>
+        <item>@string/titleFavourite</item>
+    </string-array>
+
+    <string-array name="viewType_values">
+        <item>@string/top_rated</item>
+        <item>@string/popular</item>
+        <item>@string/favourite</item>
+    </string-array>
+</resources>

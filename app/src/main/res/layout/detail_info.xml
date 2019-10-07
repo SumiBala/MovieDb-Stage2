@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/posterImage"
+            android:layout_width="@dimen/imageViewWidth"
+            android:layout_height="@dimen/imageViewHeight"
+            android:layout_marginTop="@dimen/layoutMarginTop"
+            android:contentDescription="@string/movie_content_description"
+            app:layout_constraintEnd_toStartOf="@+id/infoLayout"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/infoLayout"
+            style="@style/wrapStyle"
+            android:layout_marginStart="@dimen/detail_marginTopPadding"
+            android:layout_marginLeft="@dimen/detail_marginTopPadding"
+            android:layout_marginTop="@dimen/layoutMarginTop"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/posterImage"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/releaseDateTv"
+                style="@style/releaseStyle"
+                tools:text="ReleaseDate" />
+
+            <TextView
+                android:id="@+id/ratingTv"
+                style="@style/ratingStyle"
+                tools:text="Rating" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/favBtn"
+                style="@style/wrapStyle"
+                android:layout_marginTop="@dimen/buttonStypePaddingTop"
+                android:src="@drawable/ic_add_favorite" />
+
+            <Button
+                android:id="@+id/trailerBtn"
+                style="@style/buttonStyle"
+                android:layout_marginTop="@dimen/trailerMarginTop"
+                android:text="@string/trailer" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/overviewTv"
+            style="@style/textStyle"
+            android:layout_marginTop="@dimen/view_marginTopPadding"
+            android:justificationMode="inter_word"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/posterImage"
+            tools:ignore="UnusedAttribute"
+            tools:text="Overview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

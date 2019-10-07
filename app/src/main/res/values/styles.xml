@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="wrapStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="TitleText" parent="@style/wrapStyle">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:padding">@dimen/titleTextPadding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/titleTextSize</item>
+    </style>
+
+    <style name="msgText" parent="@style/wrapStyle">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/msgTextSize</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="textStyle" parent="@style/wrapStyle">
+        <item name="android:textSize">@dimen/ratingTextSize</item>
+        <item name="android:padding">@dimen/textStylePadding</item>
+    </style>
+
+    <style name="TvStyle" parent="@style/wrapStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/tvStylePadding</item>
+    </style>
+
+    <style name="releaseStyle" parent="@style/TvStyle">
+        <item name="android:textSize">@dimen/releaseTextSize</item>
+    </style>
+
+
+    <style name="ratingStyle" parent="@style/TvStyle">
+        <item name="android:textSize">@dimen/ratingTextSize</item>
+    </style>
+
+    <style name="buttonStyle" parent="@style/wrapStyle">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:paddingTop">@dimen/buttonStypePaddingTop</item>
+        <item name="android:background">@drawable/corner</item>
+    </style>
+
+
+</resources>

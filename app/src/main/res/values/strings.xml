@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">MovieDBApp</string>
+    <!--Controls-->
+    <string name="movie_content_description">Movie</string>
+    <!--Messages-->
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="no_movies">No Movies Found</string>
+    <!--Titles-->
+    <string name="detail_name">MovieDetail</string>
+
+    <!--Activity Title-->
+    <string name="titleToprated">TopRated Movies</string>
+    <string name="titlePopular">Popular Movies</string>
+    <string name="titleFavourite">Favourite Movies</string>
+    <!--String URLValues for MovieDB-->
+    <string name="imgPathUrl">https://image.tmdb.org/t/p/w185/</string>
+    <string name="movieDbUrl">https://api.themoviedb.org/3/movie/</string>
+
+    <string name="top_rated" translatable="false">top_rated</string>
+    <string name="popular" translatable="false">popular</string>
+    <string name="favourite" translatable="false">favourite</string>
+    <string name="reviews" translatable="false">reviews</string>
+    <string name="viewType">Type of View</string>
+    <string name="key" translatable="false">viewType</string>
+    <string name="action_settings">Settings</string>
+    <string name="review">Reviews</string>
+    <string name="no_reviews">No Reviews Found</string>
+    <string name="trailer">Trailer</string>
+    <string name="videos">videos</string>
+
+
+    <!--APIKeys for MovieDb and YouTubePlayer-->
+    <string name="APIKey">api_key=yourkey</string>
+    <string name="youtube_APIKey">yourkey</string>
+    <string name="no_trailers">No Trailers Found</string>
+    <string name="slashTag">/</string>
+    <string name="qTag">\?</string>
+
+</resources>
